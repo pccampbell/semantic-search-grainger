@@ -6,7 +6,7 @@ This project implements and evaluates semantic search for product queries using 
 
 ## Embeddings Generation
 
-All fields from the dataset were used to try to capture as much information about the products as possible but it increases the amount of time it takes to generate the embeddings. The descriptions and the bullet points were truncated for long tail products in order to better fit into the sequennce length. It would be interesting with additional time to look at the performance of indexes generated from less text and see how they compare to the embeddings generated in the notebook which includes all fields. 
+All fields from the dataset were used to try to capture as much information about the products as possible but it increases the amount of time it takes to generate the embeddings. The descriptions and the bullet points were truncated for long tail products in order to better fit into the sequence length. It would be interesting with additional time to look at the performance of indexes generated from less text and see how they compare to the embeddings generated in the notebook which includes all fields. 
 
 
 ## Data Quality Finding
