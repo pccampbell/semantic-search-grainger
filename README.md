@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements and evaluates semantic search for product queries using multiple embedding models (all-MiniLM-L6-v2, BGE-small-en-v1.5, and E5-small-v2) and indexing strategies (Brute Force, IVF-PQ, and HNSW). The system was built on ~900K products from the Amazon ESCI dataset and evaluated on 50 sample queries using metrics including MRR, Precision@K, Recall@K, and NDCG@K. Results showed that E5-small-v2 achieved the best quality (NDCG@10: 0.380 with brute force), while IVF-PQ indexing provided ~20x speedup over brute force with only ~7% quality loss. HNSW metrics dropped and while various configurations of the index were tried performance could not be improved. Additional tuning or switching to faiss or milvus could provide the expected performance.
+This project implements and evaluates semantic search for product queries using multiple embedding models (all-MiniLM-L6-v2, BGE-small-en-v1.5, and E5-small-v2) and indexing strategies (Brute Force, IVF-PQ, and HNSW). The system was built on ~900K products from the Amazon ESCI dataset and evaluated on 50 sample queries using metrics including MRR, Precision@K, Recall@K, and NDCG@K. Results showed that E5-small-v2 achieved the best quality (NDCG@10: 0.380 with brute force), while IVF-PQ indexing provided ~20x speedup over brute force with only ~7% quality loss. HNSW metrics dropped to ~%74 of brute force and while various configurations of the index were tried, performance could not be improved. Additional tuning or switching to faiss or milvus could provide the expected performance for HNSW.
 
 ## Embeddings Generation
 
